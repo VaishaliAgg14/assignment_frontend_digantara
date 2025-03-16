@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-step Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="multiStepForm">
+            <div class="progress-bar">
+                <div class="step active" data-step="1">1</div>
+                <div class="step" data-step="2">2</div>
+                <div class="step" data-step="3">3</div>
+            </div>
+
+            <div class="form-step active" data-step="1">
+                <h2>Basic Details</h2>
+                <div class="form-group">
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth*</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label>Gender*</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+                <button type="button" class="btn next-btn">Next</button>
+            </div>
+
+            <div class="form-step" data-step="2">
+                <h2>Contact Information</h2>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address*</label>
+                    <textarea id="address" name="address" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="button" class="btn back-btn">Back</button>
+                <button type="button" class="btn next-btn">Next</button>
+            </div>
+
+            <div class="form-step" data-step="3">
+                <h2>Summary</h2>
+                <div id="summary"></div>
+                <button type="button" class="btn back-btn">Back</button>
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

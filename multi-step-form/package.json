@@ -1,0 +1,16 @@
+{
+  "name": "multi-step-form",
+  "version": "1.0.0",
+  "description": "A multi-step form built with JavaScript, HTML, and CSS.",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'No build step required.'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
