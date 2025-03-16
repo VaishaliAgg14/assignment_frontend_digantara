@@ -36,7 +36,3 @@ multi-step-form
 - Multi-step navigation
 - Form validation
 - Responsive design
-
-## Contributing
-
-Feel free to submit issues or pull requests for improvements or bug fixes.
